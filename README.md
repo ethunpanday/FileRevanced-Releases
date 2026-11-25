@@ -1,7 +1,7 @@
 # ⚡ FileRevanced
 
 <p align="center">
-  <b>An advanced, high-performance file management system engineered with native speed, refined minimalism, and modern desktop precision.</b>
+  <b>An advanced, high-performance Windows file manager engineered with Modern C++20, Direct3D 11 acceleration, Android ADB &amp; Scrcpy integration, virtual archives, and refined desktop precision.</b>
 </p>
 
 <p align="center">
@@ -21,10 +21,10 @@ Get the latest official standalone release below:
 
 | Package | Version | Type | Size | Download |
 | :--- | :--- | :--- | :--- | :--- |
-| **`FileRevanced.exe`** | `v0.1.0 Beta` | Standalone Executable (Portable) | ~12.1 MB | [**Download Latest (v0.1.0 Beta)**](https://github.com/ethunpanday/FileRevanced-Releases/releases/latest) |
+| **`FileRevanced.exe`** | `v0.1.0 Beta` | Standalone Executable (Portable) | ~12.5 MB | [**Download Latest (v0.1.0 Beta)**](https://github.com/ethunpanday/FileRevanced-Releases/releases/latest) |
 
 > [!TIP]
-> **No installation required!** `FileRevanced.exe` is completely portable and self-contained. Simply download and double-click to run. If you prefer system-wide integration (Win+E, Default Explorer, context menus), you can enable it with one click inside the app settings.
+> **No installation required!** `FileRevanced.exe` is completely portable and self-contained. Simply download and double-click to run. If you prefer system-wide integration (`Win + E`, Default Explorer, context menus) or pre-downloading optional **ADB** and **SCRCPY** tools, you can configure everything in Setup with one click.
 
 👉 **[View all Releases & Changelogs](https://github.com/ethunpanday/FileRevanced-Releases/releases)**
 
@@ -32,14 +32,30 @@ Get the latest official standalone release below:
 
 ## ✨ Key Highlights
 
-- **⚡ Native Hardware Speed**: Built with Modern C++20 and hardware-accelerated Direct3D 11. Handles directories containing 350,000+ files in sub-milliseconds with fluid high-refresh-rate rendering (60/120/144Hz+).
-- **📦 Single Standalone Executable**: Everything (UI engine, plugins, icons, platform tools) is bundled inside a single compact ~12 MB binary using extreme LZMA2 compression. Zero runtime dependencies.
-- **📱 Android ADB Integration**: Built-in ADB device streaming and smartphone backup tools. Transfers files up to 15× faster than standard Windows MTP.
-- **🔄 In-App Auto-Updater**: One-click check and update mechanism. Detects new releases from this repository, downloads updates with live progress, and applies them seamlessly without losing your settings.
-- **🗂️ Multi-Tab & Split Panes**: Dual-pane workspace, unlimited tabs, instant folder jumping, and cross-pane native Drag & Drop directly to your browser, Discord, or GitHub.
-- **🪟 Windows Explorer Replacement**: Optionally set FileRevanced as your default file manager, register the `Win + E` global hotkey, integrate right-click shell context menus, and intercept browser "Show in folder" calls.
-- **🎨 Modern Fluent Aesthetics**: Clean obsidian dark and light themes, custom color pickers, adjustable UI/font scaling, and smooth zoom controls.
-- **🔍 Instant Asynchronous Search**: Real-time filtering, fuzzy search, in-place expandable tree view, and metadata inspection.
+### ⚡ Core Performance & File Engine
+- **Native Hardware Speed**: Built with Modern C++20 and Direct3D 11-accelerated Qt 6 UI for crisp high-refresh-rate rendering (`60 / 120 / 144Hz+`).
+- **Turbo Ping-Pong I/O Transfer Engine**: Multi-threaded small-file pool + 4 MB double-buffered async overlapped I/O for large files, live throughput chart, disk-space pre-checks, `.part` atomic safe-writes, and per-file conflict resolution (`Popup`, `Auto-Rename`, `If Newer`, `Overwrite`, `Skip`).
+- **Single Compact Standalone**: UI engine, styles, and compressed LZMA2 payload bundled into a single ~12.5 MB executable with zero runtime dependencies.
+- **Built-In Storage Benchmark**: Test sequential read/write, random 4K IOPS, and USB generation speed detection directly inside the app.
+
+### 📱 Android Integration (ADB + Scrcpy)
+- **Android Transfer (ADB USB & Wi-Fi)**:
+  - High-speed USB and Wireless ADB transfers (up to 15× faster than Windows MTP) with accurate engine telemetry (`ADB USB` / `ADB Wi-Fi`).
+  - Built-in **QR Code Pairing**, **6-Digit Pairing Code**, **Connect by IP**, paired endpoint history, and interactive ADB Setup Guide.
+  - **True Pause & Byte-Offset Resume**: Pausing an ADB transfer immediately halts the socket with zero background buffering and resumes cleanly from the exact byte offset (`dd` byte-range stream) without losing progress.
+- **Screen Sharing (`scrcpy`)**:
+  - Mirror, control, or record your Android screen over USB or ADB Wi-Fi directly from FileRevanced.
+  - Compact controls for **Mode** (`Screen`, `Virtual Display`, `Back Camera`, `Front Camera`, `Audio Only`), **Resolution**, **Bitrate**, **Frame Rate** (up to 120 FPS), **Codec** (`H.264`, `H.265`, `AV1`), **Rotation**, **Audio**, and two-column toggle switches with `(?)` hover tooltips.
+- **Smartphone Backup & Media Organiser**: Guided phone backup over ADB/MTP and one-click photo/video organization.
+- **Smart On-Demand Tool Downloads**: Choose whether to download **ADB** and **SCRCPY** during installation, or keep setup minimal—if either tool is missing or removed later, FileRevanced displays a compact in-app prompt to download it automatically when needed.
+
+### 🗂️ Workspace, Archives & Previews
+- **Split Panes, Unlimited Tabs & Drag-and-Drop**: Dual-pane workspace, tab context menus, native Windows Explorer-style drag icon previews with count badges, dynamic `Move to` / `Copy to` drop badges, sidebar drive/folder drop targets, and a **Floating Drop Shelf** (circle-to-popup staging tray for cross-pane/cross-folder transfers).
+- **Virtual Archive Explorer**: Browse inside `.zip`, `.7z`, `.rar`, `.tar`, and other archives natively like regular folders, add/drag files out, and handle **password-protected archives** seamlessly.
+- **Inline Inspector & Rich Previews**:
+  - **Inline Video Player**: Hardware-backed Media Foundation playback with seekbar, volume, fullscreen-free inline floating details overlay, and hover timeline thumbnails.
+  - **Multi-Page PDF Reader**, high-res image viewer, syntax-highlighted code/text preview, and live resizable columns with divider drag & double-click reset.
+- **Instant Asynchronous Search & Explorer Replacement**: Real-time filtering, fuzzy search, expandable tree navigation, optional `Win + E` hijack, right-click shell context menus, obsidian dark/light Fluent themes, UI scaling presets, and an in-app **Auto-Updater & Changelog viewer**.
 
 ---
 
@@ -48,29 +64,29 @@ Get the latest official standalone release below:
 ### Mode 1: Portable / Standalone
 1. Download **`FileRevanced.exe`** from the [Latest Release](https://github.com/ethunpanday/FileRevanced-Releases/releases/latest).
 2. Place it anywhere (e.g. `Downloads`, `Desktop`, or a USB drive).
-3. Double-click to launch. Everything runs out of the box!
+3. Double-click to launch and start immediately.
 
 ### Mode 2: System Installation (Optional)
 To integrate FileRevanced deeply into Windows:
 1. Open **FileRevanced**.
-2. Click the **Menu** (or settings icon) $\rightarrow$ select **Setup**.
-3. Configure your preferences:
-   - ✅ **Desktop Shortcut**: Add a shortcut to your desktop.
-   - ✅ **Right-Click Context Menu**: Add "Open in FileRevanced" to folders & drives.
-   - ✅ **Default File Explorer**: Make FileRevanced open on `Win + E` and folder launches.
-   - ✅ **Add to PATH**: Launch `file-revanced` directly from CMD or PowerShell.
-4. Click **Apply Changes**.
+2. Click **Menu** $\rightarrow$ select **Setup**.
+3. Configure your integration toggles & optional downloads:
+   - **Desktop shortcut** — Add a shortcut to your Desktop.
+   - **Set as default** — Register `Win + E` and default folder launches.
+   - **Right-click entries** — Add "Open in FileRevanced" to folders & drives.
+   - **Add to PATH** — Launch `file-revanced` directly from CMD or PowerShell.
+   - **Download Additional Files (`ADB` / `SCRCPY`)** — Pre-download Google Platform Tools and Scrcpy during install (or uncheck either one and download on demand later).
+4. Click **Install / Apply Changes**.
 
 ---
 
 ## 🔄 Updates
 
-FileRevanced features a built-in update client:
-1. Inside FileRevanced, go to **Menu** $\rightarrow$ **Setup**.
-2. Scroll to the **Updates** section.
-3. Click **Check for Updates**:
-   - The app directly queries this repository for new releases.
-   - If an update is found, click **Update to v...** to download and apply it automatically.
+FileRevanced features a built-in update & changelog client:
+1. Inside FileRevanced, go to **Menu** $\rightarrow$ **Setup** (or **Changelog**).
+2. Click **Check for Updates**:
+   - FileRevanced checks this repository for newer releases.
+   - If an update is available, click **Update** to download and apply it automatically while preserving your settings.
 
 ---
 
@@ -82,7 +98,7 @@ FileRevanced features a built-in update client:
 | **Architecture** | x86_64 (64-bit) | x86_64 (64-bit) |
 | **Graphics** | DirectX 11 compatible GPU / iGPU | Dedicated GPU with Direct3D 11 support |
 | **Memory** | 512 MB RAM | 2 GB+ RAM |
-| **Disk Space** | ~35 MB free space | 100 MB free space |
+| **Disk Space** | ~35 MB free space | 100 MB+ free space (extra if ADB/Scrcpy downloaded) |
 
 ---
 
@@ -97,5 +113,6 @@ We welcome feedback and contributions! Please open an issue on the issue tracker
 ## 📄 License & Credits
 
 - Developed & Maintained by **Ethun Panday**
-- Built with **Modern C++20** & **Qt Quick (Qt 6)**
+- Built with **Modern C++20**, **Qt Quick (Qt 6)**, **Direct3D 11**, and **Windows Media Foundation**
+- Powered optionally by Google **Android Platform Tools (ADB)** & **Genymobile `scrcpy`**
 - Release Hub: [FileRevanced-Releases](https://github.com/ethunpanday/FileRevanced-Releases)
