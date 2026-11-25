@@ -3,7 +3,9 @@
 <p align="center">
   <b>An advanced, high-performance Windows file manager engineered with Modern C++20, Direct3D 11 acceleration, Android ADB &amp; Scrcpy integration, virtual archives, and refined desktop precision.</b>
 </p>
-
+<p align="center">
+  <img src="preview.png" alt="FileRevanced Preview" width="900" />
+</p>
 <p align="center">
   <a href="https://github.com/ethunpanday/FileRevanced-Releases/releases/latest"><img src="https://img.shields.io/github/v/release/ethunpanday/FileRevanced-Releases?include_prereleases&color=0078D4&label=Latest%20Version&logo=github" alt="Latest Version"></a>
   <a href="#"><img src="https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20(64--bit)-0078D7?logo=windows11" alt="Platform"></a>
