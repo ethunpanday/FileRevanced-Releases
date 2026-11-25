@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="preview.png" alt="FileRevanced Preview" width="900" />
+  <img src="Preview.png" alt="FileRevanced Preview" width="900" />
 </p>
 
 > [!NOTE]
