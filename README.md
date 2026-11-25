@@ -1,11 +1,9 @@
 # ⚡ FileRevanced
 
 <p align="center">
-  <b>An advanced, high-performance Windows file manager engineered with Modern C++20, Direct3D 11 acceleration, Android ADB &amp; Scrcpy integration, virtual archives, and refined desktop precision.</b>
+  <b>Inspired by File Pilot — an advanced, high-performance Windows file manager engineered with Modern C++20, Direct3D 11 acceleration, Floating Drop Shelf, Android ADB Share &amp; Scrcpy Screen Sharing, virtual archives, and refined desktop precision.</b>
 </p>
-<p align="center">
-  <img src="Preview.png" alt="FileRevanced Preview" width="900" />
-</p>
+
 <p align="center">
   <a href="https://github.com/ethunpanday/FileRevanced-Releases/releases/latest"><img src="https://img.shields.io/github/v/release/ethunpanday/FileRevanced-Releases?include_prereleases&color=0078D4&label=Latest%20Version&logo=github" alt="Latest Version"></a>
   <a href="#"><img src="https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20(64--bit)-0078D7?logo=windows11" alt="Platform"></a>
@@ -13,6 +11,13 @@
   <a href="#"><img src="https://img.shields.io/badge/Architecture-x86__64-orange" alt="Architecture"></a>
   <a href="https://github.com/ethunpanday/FileRevanced-Releases/issues"><img src="https://img.shields.io/github/issues/ethunpanday/FileRevanced-Releases?color=purple" alt="Issues"></a>
 </p>
+
+<p align="center">
+  <img src="preview.png" alt="FileRevanced Preview" width="900" />
+</p>
+
+> [!NOTE]
+> **Inspired by File Pilot**, FileRevanced brings blazing-fast C++20 / Direct3D 11 responsiveness to Windows while adding power features built right in — including **Floating Drop Shelf**, **Android ADB USB & Wi-Fi Transfer**, **Screen Sharing (`scrcpy`)**, **Smartphone Backup**, **Virtual Archive Explorer**, and **Inline Video & PDF Previews**.
 
 ---
 
